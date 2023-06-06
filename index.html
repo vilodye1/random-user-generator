@@ -8,7 +8,12 @@
     <title>Random User Generator</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <img v-bind:src="picture" alt="">
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>{{email}}</h3>
+        <button>Get random user</button>
+    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
